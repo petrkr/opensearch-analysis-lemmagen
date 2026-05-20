@@ -44,14 +44,14 @@ public class LemmagenAnalysisTest extends OpenSearchTokenStreamTestCase {
   }
 
   public OpenSearchTestCase.TestAnalysis createAnalysis() throws IOException {
-    InputStream lexicon = LemmagenAnalysisTest.class.getResourceAsStream("/org/elasticsearch/index/analysis/cs.lem");
+    InputStream lexicon = LemmagenAnalysisTest.class.getResourceAsStream("/org/opensearch/index/analysis/cs.lem");
 
     Path home = createTempDir();
     Path config = home.resolve("config" + "/" + LemmagenFilterFactory.DEFAULT_DIRECTORY);
     Files.createDirectories(config);
     Files.copy(lexicon, config.resolve("cs.lem"));
 
-    String path = "/org/elasticsearch/index/analysis/lemmagen.json";
+    String path = "/org/opensearch/index/analysis/lemmagen.json";
 
     Settings settings = Settings.builder().loadFromStream(path, getClass().getResourceAsStream(path), false)
         .put(IndexMetadata.SETTING_VERSION_CREATED, Version.CURRENT).put(Environment.PATH_HOME_SETTING.getKey(), home)
