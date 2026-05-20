@@ -40,6 +40,7 @@ repositories {
 dependencies {
   compileOnly "org.opensearch:opensearch:${opensearch_version}"
   implementation "eu.hlavki.text:jlemmagen:1.0"
+  implementation "org.slf4j:slf4j-api:2.0.17"
   testImplementation "org.apache.lucene:lucene-test-framework:${lucene_version}"
   testImplementation("org.opensearch.test:framework:${opensearch_version}") {
     exclude group: "org.hamcrest", module: "hamcrest-all"
