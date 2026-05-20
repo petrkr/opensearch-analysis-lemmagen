@@ -1,0 +1,20 @@
+{
+    "index": {
+        "analysis": {
+            "filter": {
+                "lemmagen_lexicon" : {
+                    "type": "lemmagen",
+                    "lexicon": "cs"
+                },
+                "lemmagen_lexicon_with_ext" : {
+                    "type": "lemmagen",
+                    "lexicon": "cs.lem"
+                },
+                "lemmagen_lexicon_path" : {
+                    "type": "lemmagen",
+                    "lexicon_path": "lemmagen/cs.lem"
+                }
+            }
+        }
+    }
+}
