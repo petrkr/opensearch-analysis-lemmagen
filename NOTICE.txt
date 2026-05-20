@@ -1,0 +1,11 @@
+opensearch-analysis-lemmagen
+
+This product includes software developed by the OpenSearch Project
+(https://opensearch.org/).
+
+This repository is a fork of the original Elasticsearch plugin
+elasticsearch-analysis-lemmagen by Vojtech Hyza
+(https://github.com/vhyza/elasticsearch-analysis-lemmagen).
+
+This product includes jLemmaGen by Michal Hlavac
+(https://github.com/hlavki/jlemmagen).
