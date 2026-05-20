@@ -23,7 +23,7 @@ import java.nio.file.Path;
 import static org.apache.lucene.tests.analysis.BaseTokenStreamTestCase.assertTokenStreamContents;
 import static org.hamcrest.Matchers.instanceOf;
 
-public class LemmagenAnalysisTest extends OpenSearchTokenStreamTestCase {
+public class LemmagenAnalysisTests extends OpenSearchTokenStreamTestCase {
 
   public void testLemmagenTokenFilter() throws IOException {
     OpenSearchTestCase.TestAnalysis analysis = createAnalysis();
@@ -44,7 +44,7 @@ public class LemmagenAnalysisTest extends OpenSearchTokenStreamTestCase {
   }
 
   public OpenSearchTestCase.TestAnalysis createAnalysis() throws IOException {
-    InputStream lexicon = LemmagenAnalysisTest.class.getResourceAsStream("/org/opensearch/index/analysis/cs.lem");
+    InputStream lexicon = LemmagenAnalysisTests.class.getResourceAsStream("/org/opensearch/index/analysis/cs.lem");
 
     Path home = createTempDir();
     Path config = home.resolve("config" + "/" + LemmagenFilterFactory.DEFAULT_DIRECTORY);
