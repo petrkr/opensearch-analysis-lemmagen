@@ -14,8 +14,16 @@ This repository is a fork of the original Elasticsearch plugin by [Vojtěch Hý�
 # specify plugin version
 #
 export VERSION=3.6.0
-./bin/opensearch-plugin install file:///path/to/opensearch-analysis-lemmagen-$VERSION-plugin.zip
+./bin/opensearch-plugin install file:///path/to/build/distributions/<plugin-zip>
 ```
+
+To build the plugin ZIP locally:
+
+```bash
+gradle assemble
+```
+
+The ZIP is created in `build/distributions`.
 
 ### Lexicon
 
