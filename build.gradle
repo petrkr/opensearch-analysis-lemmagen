@@ -1,6 +1,6 @@
 buildscript {
   ext {
-    opensearch_version = "3.6.0"
+    opensearch_version = "3.7.0"
     lucene_version = "10.4.0"
   }
 
