@@ -1,7 +1,7 @@
 buildscript {
   ext {
     opensearch_version = "3.8.0"
-    lucene_version = "10.4.0"
+    lucene_version = "10.5.0"
   }
 
   repositories {
