@@ -13,7 +13,7 @@ This repository is a fork of the original Elasticsearch plugin by [Vojtěch Hý�
 ```bash
 # specify plugin version
 #
-export VERSION=3.6.0
+export VERSION=3.8.0
 ./bin/opensearch-plugin install file:///path/to/build/distributions/<plugin-zip>
 ```
 
