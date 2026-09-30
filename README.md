@@ -240,6 +240,11 @@ curl -H "Content-Type: application/json" -X PUT 'http://localhost:9200/lemmagen-
 }'
 ```
 
+## Build
+```
+podman run --rm --userns=keep-id --user "$(id -u):$(id -g)" -v "$PWD:/workspace:Z" -w /workspace -e GRADLE_USER_HOME=/tmp/gradle-home docker.io/library/gradle:9.4.1-jdk21-corretto gradle --no-daemon test assemble
+```
+
 Credits
 =======
 
